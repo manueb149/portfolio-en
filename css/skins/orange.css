@@ -1,0 +1,47 @@
+aside .logo a::before{
+    border-top: 4px solid #4978ae;
+    border-left: 4px solid #fa5b0f;
+}
+aside .logo a::after{
+    border-right: 4px solid #fa5b0f;
+    border-bottom: 4px solid #4978ae;
+}
+aside nav li a:hover,
+body.dark aside nav li a:hover{
+    color:  #4978ae;
+}
+aside nav li a.active,
+.about .about-text h3 span,
+body.dark aside nav li a.active,
+.contact .contact-item .icon .fa,
+.portfolio .portfolio-filter button.active,
+.portfolio .portfolio-info .portfolio-icon .fa,
+.services .services-item .service-item-inner div.icon .fa{
+    color:  #fa5b0f;
+}
+.btn,
+aside div.toggler span,
+.section-title h2::after,
+.section-title h2::before,
+aside div.toggler span::after,
+aside div.toggler span::before,
+.about .about-content .timeline .timeline-dot,
+.about .about-content .timeline .timeline-item::before,
+.services .services-item .service-item-inner:hover div.icon{
+    background-color: #fa5b0f;
+}
+.progress .percent svg circle,
+.progress .percent svg circle:nth-child(2){
+    stroke: #fa5b0f;
+}
+/* .profile-img img{
+    box-shadow: 0px 0px 50px 1px #fa5b0f, 0px 0px 60px 100px rgba(0,0,0,0.2);
+} */
+.portfolio .portfolio-filter button.active{
+    border-color: #fa5b0f;
+}
+body.dark .contact .contact-form .box:focus,
+body.dark .services .services-item .service-item-inner:hover{
+    -webkit-box-shadow: 0px 0px 20px 0.5px #fa5b0f;
+    box-shadow: 0px 0px 20px 0.5px #fa5b0f;
+}

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/tittle-icon.png" type="image/x-icon">
+    <meta name="author" content="Manuel Bencosme">
+    <meta name="description" content="Here yo can find information about a great dominican
+    network engineer and web developer">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://portfolio-mebc.netlify.app">
+    <meta property="twitter:title" content="Manuel's Portfolio">
+    <meta property="twitter:description" content="Here yo can find information about a great dominican network engineer and web developer!">
+    <meta property="twitter:image" content="https://portfolio-mebc.netlify.app/img/meta-img.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skins/blue.css">
+
+    <!-- Live style switcher -->
+    <link rel="stylesheet" class="alt-style" title="pink" href="css/skins/pink.css" disabled>
+    <link rel="stylesheet" class="alt-style" title="green" href="css/skins/green.css" disabled>
+    <link rel="stylesheet" class="alt-style" title="blue" href="css/skins/blue.css">
+    <link rel="stylesheet" class="alt-style" title="orange" href="css/skins/orange.css" disabled>
+    <link rel="stylesheet" class="alt-style" title="yellow" href="css/skins/yellow.css" disabled>
+    <script src="https://kit.fontawesome.com/b3f24f6f4a.js" crossorigin="anonymous"></script>
+    <title>Manuel's Portfolio</title>
+</head>
+<body class="dark">
+    <!-- Main Container Start-->
+    <main class="main-container">
+
+        <!-- Aside Start -->
+        <aside>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">MEBC</a>
+            </div>
+
+            <!-- Navbar Toogle -->
+            <div class="toggler">
+                <span></span>
+            </div>
+
+            <!-- Navbar -->
+            <nav>
+                <ul>
+                    <li><a href="/" class="nav-link active" onclick="selectSection('Home')"><i class="fa fa-home"></i>Inicio</a></li>
+                    <li><a href="/" class="nav-link" onclick="selectSection('About')"><i class="fa fa-user"></i>¿Quién soy?</a></li>
+                    <li><a href="/" class="nav-link" onclick="selectSection('Services')"><i class="fa fa-list"></i>Servicios</a></li>
+                    <li><a href="/" class="nav-link" onclick="selectSection('Portfolio')"><i class="fa fa-briefcase"></i>Portafolio</a></li>
+                    <li><a href="/" class="nav-link" onclick="selectSection('Contact')"><i class="fa fa-envelope"></i>Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Copyright -->
+            <div class="copyright">
+                <span>&copy; 2020 MEBC</span>
+            </div>
+        </aside>
+        <!-- Aside End -->
+
+        <!-- Main Content Start-->
+        <div class="main-content">
+            <!-- Home Start -->
+            <section title="Home" class="home section section-active">
+                <div class="container">
+                    <div class="profile-img">
+                        <img src="img/profile.jpg" alt="profile">
+                    </div>
+                    <h1>Manuel E. Bencosme C.</h1>
+                    <p>Ingeniero Telemático</p>
+                    <p>Web Developer</p>
+                </div>
+            </section>
+            <!-- Home End -->
+
+            <!-- About Start -->
+            <section title="About" class="about section hidden">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Acerca de Mi</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3>Hola! Soy Manuel Bencosme un <span>Desarrollador Web Junior</span></h3>
+                                    <p>Me considero una persona de mente clara y lógica, con un enfoque práctico para 
+                                        la resolución de problemas y un impulso para ver las cosas hasta su finalización. 
+                                        Tengo más de 5 años de experiencia trabajando en ingeniería, recorriendo muchas 
+                                        áreas como electrónica, electricidad e informática. Estoy ansioso por aprender, 
+                                        siempre disfruto superar nuevos desafíos y tengo gran interés en el desarrollo 
+                                        de software y todo lo relacionado con las nuevas tecnologías.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>Nacimiento: <span>Oct 12 1996</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Edad: <span>23</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Correo: <span>manueb149@gmail.com</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Grado: <span> Ing. Telemático</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Celular: <span>+1 (829) 606-5432</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Ciudad: <span>Santo Domingo, RD</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <div class="skill-item padd-15">
+                                            <div class="row">
+                                                <div class="progress">
+                                                    <div class="percent">
+                                                        <div class="progressBar" id="progressCircHTML"></div>
+                                                        <p class="skill-name">HTML</p>
+                                                        <h5 class="number">80%</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="percent">
+                                                        <div class="progressBar" id="progressCircCSS"></div>
+                                                        <p class="skill-name">CSS</p>
+                                                        <h5 class="number">65%</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="percent">
+                                                        <div class="progressBar" id="progressCircJS"></div>
+                                                        <p class="skill-name">Javascript</p>
+                                                        <h5 class="number">70%</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="percent">
+                                                        <div class="progressBar" id="progressCircNode"></div>
+                                                        <p class="skill-name">Node.js</p>
+                                                        <h5 class="number">55%</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="percent">
+                                                        <div class="progressBar" id="progressCircReact"></div>
+                                                        <p class="skill-name">React</p>
+                                                        <h5 class="number">76%</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="percent">
+                                                        <div class="progressBar" id="progressCircPython"></div>
+                                                        <p class="skill-name">Python</p>
+                                                        <h5 class="number">60%</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="education padd-15">
+                                    <h3 class="title">Educación</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-box">
+                                                <!-- Timeline Item -->
+                                                <div class="timeline-item">
+                                                    <div class="timeline-dot"></div>
+                                                    <h6 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2015 - 2020
+                                                    </h6>
+                                                    <h4 class="timeline-title">Grado en ingeniería Telemática</h4>
+                                                    <h4 class="timeline-title">PUCMM</h4>
+                                                    <p class="timeline-text">
+                                                        Experiencia en transporte y distribución de información, 
+                                                        utilizando las tecnologías más modernas como: enlaces de 
+                                                        fibra óptica de alta velocidad, canales satelitales, 
+                                                        sistemas de microondas, redes privadas o públicas, sistemas de 
+                                                        redes convergentes, seguridad de datos, sistemas distribuidos, etc.
+                                                    </p>
+                                                </div>
+                                                <!-- Timeline Item End-->                                                  
+                                                <!-- Timeline Item -->
+                                                <div class="timeline-item">
+                                                    <div class="timeline-dot"></div>
+                                                    <h6 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2010 - 2014
+                                                    </h6>
+                                                    <h4 class="timeline-title">Bachiller Técnico en Electrónica digital y micro-computación</h4>
+                                                    <h4 class="timeline-title">Intituto Técnico Salesiano</h4>
+                                                    <p class="timeline-text">
+                                                        Amplio conocimiento en eléctricidad de CA/CC en teoría y práctica, así como en resolución 
+                                                        de problemas y reparación de circuitos eléctricos hasta el nivel de componentes mediante 
+                                                        esquemas. Además, conocimiento en diseño y fabricación de placas de circuito impreso.
+                                                    </p>
+                                                </div>
+                                                <!-- Timeline Item End-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="experience padd-15">
+                                    <h3 class="title">Experiencia</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-box">
+                                                <!-- Timeline Item -->
+                                                <div class="timeline-item">
+                                                    <div class="timeline-dot"></div>
+                                                    <h6 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2015 - Now
+                                                    </h6>
+                                                    <h4 class="timeline-title">Analista de Control y Protecciones</h4>
+                                                    <h4 class="timeline-title">ETED</h4>
+                                                    <p class="timeline-text">
+                                                        Instalación y configuración de equipos automatizados como hubs, 
+                                                        switches, routers, HMI, entre otros. Creación de aplicaciones y sistemas
+                                                        destinados a resolver problemas específicos de la empresa. Supervisión de la 
+                                                        instalación de nodos ópticos a nivel nacional.
+                                                    </p>
+                                                </div>
+                                                <!-- Timeline Item End-->                                                  
+                                                <!-- Timeline Item -->
+                                                <div class="timeline-item">
+                                                    <div class="timeline-dot"></div>
+                                                    <h6 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>
+                                                        2014 - 2014
+                                                    </h6>
+                                                    <h4 class="timeline-title">Soporte Técnico</h4>
+                                                    <h4 class="timeline-title">INACIF</h4>
+                                                    <p class="timeline-text">
+                                                        Gestión de equipos de red en busqueda del óptimo funcionamiento de la infraestructura 
+                                                        de las áreas que gestiona la institución. Mantenimiento de equipos administrativos 
+                                                        (Computadoras, Impresoras, entre otros). Gestión y mantenimiento de cámaras IP.
+                                                    </p>
+                                                </div>
+                                                <!-- Timeline Item End-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="buttons padd-15">
+                                    <a href="./contents/Manuel-Bencosme-CV-es.pdf" class="btn">Ver CV</a>
+                                    <a href="" class="btn" onclick="selectSection('Contact')">Interesad@?</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About End -->
+
+            <!-- Services Start -->
+            <section title="Services" class="services section hidden">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Servicios</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Service Item -->
+                        <div class="services-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon"><i class="fa fa-code"></i></div>
+                                <h4>Desarrollo Web</h4>
+                                <p>&rarr; Frontend</p>
+                                <p>&rarr; Backend</p>
+                                <p>&rarr; RESTFul APIs</p>
+                                <p>&rarr; Unit Test</p>
+                            </div>
+                        </div>
+                        <!-- Serices Item End -->
+                        <!-- Service Item -->
+                        <div class="services-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon"><i class="fa fa-laptop"></i></div>
+                                <h4>Soporte de TI</h4>
+                                <p>&rarr; Mantenimiento de redes</p>
+                                <p>&rarr; Gestión de aplicaciones </p>
+                                <p>&rarr; Gestión de servidores</p>
+                            </div>
+                        </div>
+                        <!-- Serices Item End -->
+                        <!-- Service Item -->
+                        <div class="services-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon"><i class="fa fa-database"></i></div>
+                                <h4>Adminstración de bases de datos</h4>
+                                <p>&rarr; Relacionales:</p>
+                                <p>Microsoft SQL Server, MySQL, PostgreSQL.</p>
+                                <p>&rarr; No-relacionales:</p>
+                                <p>MongoDB.</p>
+                            </div>
+                        </div>
+                        <!-- Serices Item End -->
+                    </div>
+            </section>
+            <!-- Services End -->
+
+            <!-- Portfolio Start -->
+            <section title="Portfolio" class="portfolio section hidden">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Portafolio</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Portfolio Item -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-box">
+                                <div 
+                                    class="portfolio-img" 
+                                    style="background-image: url('img/portfolio/adm.png');"
+                                >
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Admin Pacientes</h4>
+                                    <div class="portfolio-icon">
+                                        <div class="view">
+                                            <i class="fa fa-eye"></i>
+                                            <a href="https://citas-mebc.netlify.app" target="_blank" rel="noopener noreferrer">View</a>
+                                        </div>
+                                        <div class="code">
+                                            <i class="fa fa-code"></i>
+                                            <a href="https://github.com/manueb149/citas_react" target="_blank" rel="noopener noreferrer">Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio Item End -->
+                        <!-- Portfolio Item -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-box">
+                                <div
+                                    class="portfolio-img" 
+                                    style="background-image: url('img/portfolio/crypto.png');"
+                                >
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Convetidor de criptomonedas</h4>
+                                    <div class="portfolio-icon">
+                                        <div class="view">
+                                            <i class="fa fa-eye"></i>
+                                            <a href="https://cripto-mebc.netlify.app" target="_blank" rel="noopener noreferrer">View</a>
+                                        </div>
+                                        <div class="code">
+                                            <i class="fa fa-code"></i>
+                                            <a href="https://github.com/manueb149/criptomonedas" target="_blank" rel="noopener noreferrer">Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio Item End -->
+                        <!-- Portfolio Item -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-box">
+                                <div 
+                                    class="portfolio-img"
+                                    style="background-image: url('img/portfolio/wallet.png');"
+                                >
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Control de gastos</h4>
+                                    <div class="portfolio-icon">
+                                        <div class="view">
+                                            <i class="fa fa-eye"></i>
+                                            <a href="https://presupuesto-mebc.netlify.app" target="_blank" rel="noopener noreferrer">View</a>
+                                        </div>
+                                        <div class="code">
+                                            <i class="fa fa-code"></i>
+                                            <!-- <h5>Code</h5> -->
+                                            <a href="https://github.com/manueb149/presupuesto" target="_blank" rel="noopener noreferrer">Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio Item End -->
+                        <!-- Portfolio Item -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-box">
+                                <div
+                                    class="portfolio-img"
+                                    style="background-image: url('img/portfolio/ensurance.png');"
+                                >
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Cotizador de seguros</h4>
+                                    <div class="portfolio-icon">
+                                        <div class="view">
+                                            <i class="fa fa-eye"></i>
+                                            <a href="https://cotizador-mebc.netlify.app" target="_blank" rel="noopener noreferrer">View</a>
+                                        </div>
+                                        <div class="code">
+                                            <i class="fa fa-code"></i>
+                                            <a href="https://github.com/manueb149/cotizador" target="_blank" rel="noopener noreferrer">Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio Item End -->
+                        <!-- Portfolio Item -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-box">
+                                <div
+                                    class="portfolio-img"
+                                    style="background-image: url('img/portfolio/drinks.png');"
+                                >
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Buscador de bebidas</h4>
+                                    <div class="portfolio-icon">
+                                        <div class="view">
+                                            <i class="fa fa-eye"></i>
+                                            <a href="https://bebidas-mebc.netlify.app" target="_blank" rel="noopener noreferrer">View</a>
+                                        </div>
+                                        <div class="code">
+                                            <i class="fa fa-code"></i>
+                                            <a href="https://github.com/manueb149/image-search" target="_blank" rel="noopener noreferrer">Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio Item End -->
+                        <!-- Portfolio Item -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-box">
+                                <div
+                                    class="portfolio-img"
+                                    style="background-image: url('img/portfolio/weather.png');"
+                                >
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Buscador de Clima</h4>
+                                    <div class="portfolio-icon">
+                                        <div class="view">
+                                            <i class="fa fa-eye"></i>
+                                            <a href="https://clima-mebc.netlify.app" target="_blank" rel="noopener noreferrer">View</a>
+                                        </div>
+                                        <div class="code">
+                                            <i class="fa fa-code"></i>
+                                            <a href="https://github.com/manueb149/clima" target="_blank" rel="noopener noreferrer">Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio Item End -->
+                    </div>
+                </div>
+            </section>
+            <!-- Portfolio End-->
+
+            <!-- Contact Start -->
+            <section title="Contact" class="contact section hidden">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contáctame</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="contact-item padd-15">
+                            <div class="item">
+                                <div class="icon"><i class="fa fa-phone"></i></div>
+                                <h4>Llama al</h4>
+                                <p>+1 (829)-606-5432</p>
+                            </div>
+                        </div>
+                        <div class="contact-item padd-15">
+                            <div class="item">
+                                <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                                <h4>Residencia</h4>
+                                <p>Santo Domingo, RD.</p>
+                            </div>
+                        </div>
+                        <div class="contact-item padd-15">
+                            <div class="item">
+                                <div class="icon"><i class="fa fa-envelope-open-text"></i></div>
+                                <h4>Correo</h4>
+                                <p>manueb149@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <form action="mailto:manueb149@gmail.com">
+                                <div class="row">
+                                    <div class="name padd-15">
+                                        <input type="text" class="box" placeholder="Name*">
+                                    </div>
+                                    <div class="email padd-15">
+                                        <input type="text" class="box" placeholder="Company*">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="subject padd-15">
+                                        <input name="subject" type="text" class="box" placeholder="Subject*">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="message padd-15">
+                                        <textarea name="body" class="box" placeholder="Your Message . . ."></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn">Enviar mensaje</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact End -->
+        </div>
+        <!-- Main Content End -->
+    </main>
+    <!-- Main Container End-->
+
+    <!-- Switcher Container Start -->
+    <div class="style-switcher">
+        <div class="styles-box-inner">
+            <div class="cog-box">
+                <div class="cog"><i class="fas fa-palette"></i></div>
+            </div>
+            <div class="styles-box">
+                <h4>Style Switcher</h4>
+                <div class="switcher">
+                    <span class="pink style-dot" onclick="setActiveStyle('pink')"></span>
+                    <span class="blue style-dot" onclick="setActiveStyle('blue')"></span>
+                    <span class="orange style-dot" onclick="setActiveStyle('orange')"></span>
+                    <span class="yellow style-dot" onclick="setActiveStyle('yellow')"></span>
+                    <span class="green style-dot" onclick="setActiveStyle('green')"></span>
+                </div>
+                <h4>Body Skin</h4>
+                <div class="skins">
+                    <label>Light<input class="body-skin" type="radio" name="skin" value="Light"></label>
+                    <label>Dark<input class="body-skin" type="radio" name="skin" value="Dark" checked></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Switcher Container End -->
+
+    <!-- Progress Bar -->
+    <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/0.5.6/dist/progressbar.js"></script>
+
+    <!-- Template script -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
